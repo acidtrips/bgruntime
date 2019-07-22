@@ -1,0 +1,5 @@
+## Interface: 80200
+## Title: BGRunTime
+## Notes: Add the battleground time elapsed back to the new scoreboard
+
+core\addon.xml

@@ -1,0 +1,12 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+<Frame name="BGRuntime" hidden="true">
+  <Scripts>
+    <OnLoad>
+      self:SetScript("OnEvent", function(self, event, ...) self[event](self, ...) end)
+      self:RegisterEvent("PLAYER_LOGIN")
+    </OnLoad>
+  </Scripts>
+</Frame>
+<Script file="addon.lua"/>
+</Ui>
